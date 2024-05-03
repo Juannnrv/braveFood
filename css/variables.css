@@ -1,8 +1,25 @@
 :root {
     --color-1: #ff702a;
-    --color-1: #fff;
-    --color-1: #1e1d2b;
-    --color-1: #000;
-    --color-1: #ffefe8;
-    --color-1: #2c2b47;
+    --color-2: #fff;
+    --color-3: #1e1d2b;
+    --color-4: #000;
+    --color-5: #ffefe8;
+    --color-6: #2c2b47;
+    --color-7: #087f5b;
+
+    /* Desktop */
+    --padding--section-home: 40px 50px;
+    --padding--section-about: 150px;
+    --padding--section-menu: 80px;
+    --padding--section-service: 80px;
+    --padding--section-contact: 100px;
+    --padding--section-footer: 100px 80px;
+
+    /* Mobile */
+    --padding--media-section-home: 20px;
+    --padding--media-section-about: 42px;
+    --padding--media-section-menu: 30px 16px;
+    --padding--media-section-service: 20px;
+    --padding--media-section-contact: 25px 30px;
+    --padding--media-section-footer: 40px;
 }
