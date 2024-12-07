@@ -39,7 +39,7 @@ summary {
     position: fixed;
     top: 90px;
     left: -100%;
-    width: 394px;
+    width: 354px;
     height: 500px;
     background-color: var(--color-6);
     color: var(--color-2);
@@ -47,19 +47,26 @@ summary {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    transition: left 0.3s ease-in-out;
     cursor: pointer;
+    transition: left 0.3s ease-in-out;
 }
 .square img {
     display: none; 
+    cursor: pointer;
 }
 
 .nav {
     display: flex;
     flex-direction: row;
+    flex-direction: row;
     gap: 50px;
     color: var(--color-2);
     font-size: 14px;
+}
+
+.nav a, .sidebar_content a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #h {
@@ -308,6 +315,55 @@ summary {
     font-size: 20px;
 }
 
+@media (max-width: 1024px) {
+    .section_home {
+        padding: var(--padding--media-section-home);
+        height: 90vh;
+    }
+    .article_nav h1 {
+        font-size: 30px;
+    }
+    .article_content {
+        gap: 30px;
+    }
+    .content_info h2 {
+        font-size: 70px;
+    }
+    .content_info p {
+        font-size: 28px;
+    }
+    .section__about {
+        height: 90vh;
+    }
+    .article__infous h2 {
+        font-size: 40px;
+    }
+    .article__infous p {
+        font-size: 20px;
+    }
+    .section__menu {
+        height: 150vh;
+    }
+    .article__infomenu h2 {
+        font-size: 40px;
+    }
+    .section__service {
+        height: 130vh;
+    }
+    .article__infoservice h2 {
+        font-size: 40px;
+    }
+    .section__contact {
+        height: 45vh;
+    }
+    .article__contact h2 {
+        font-size: 50px;
+    }
+    .section_footer {
+        height: 100vh;
+    }
+}
+
 @media (max-width: 768px) {
     
     .section_home {
@@ -324,11 +380,20 @@ summary {
         display: block; 
         margin: -80px 0 0 300px;
         width: 70px;
+        cursor: pointer;
     }
     .sidebar_content {
-        left: 10px;
+        left: 100px;
         font-size: 25px;
         gap: 40px;
+    }
+    .sidebar_content a {
+        font-size: 25px;
+        color: var(--color-2);
+    }
+    .nav a {
+        font-size: 14px;
+        color: var(--color-2);
     }
     .article_nav {
         flex-direction: column;
@@ -474,5 +539,54 @@ summary {
     }
     .footer__content img{
         margin-left: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section_home {
+        padding: var(--padding--media-section-home);
+        height: 85vh;
+    }
+    .article_nav h1 {
+        font-size: 20px;
+    }
+    .article_content {
+        gap: 10px;
+    }
+    .content_info h2 {
+        font-size: 40px;
+    }
+    .content_info p {
+        font-size: 20px;
+    }
+    .section__about {
+        height: 85vh;
+    }
+    .article__infous h2 {
+        font-size: 30px;
+    }
+    .article__infous p {
+        font-size: 16px;
+    }
+    .section__menu {
+        height: 120vh;
+    }
+    .article__infomenu h2 {
+        font-size: 30px;
+    }
+    .section__service {
+        height: 100vh;
+    }
+    .article__infoservice h2 {
+        font-size: 30px;
+    }
+    .section__contact {
+        height: 35vh;
+    }
+    .article__contact h2 {
+        font-size: 40px;
+    }
+    .section_footer {
+        height: 80vh;
     }
 }
